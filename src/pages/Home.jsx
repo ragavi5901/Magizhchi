@@ -209,7 +209,40 @@ const Home = () => {
         <Category />
       </section>
 
-      
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12" className="text-center pt-3">
+              <h5 className="feature__subtitle mb-4">What we serve</h5>
+              <h2 className="feature__title">Please be relaxed</h2>
+              <h2 className="feature__title">
+                we <span>work for you </span>
+              </h2>
+              <p className="mb-1 mt-4 feature__text">
+              Perfect Quality & Accurate Quantity 
+              </p>
+              {/* <p className="feature__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aperiam, eius.
+              </p> */}
+            </Col>
+
+            {featureData.map((item, index) => (
+              <Col lg="4" md="6" sm="6" key={index} className="mt-5">
+                <div className="feature__item text-center px-5 py-3">
+                  <img
+                    src={item.imgUrl}
+                    alt="feature-img"
+                    className="w-25 mb-3"
+                  />
+                  <h5 className=" fw-bold mb-3">{item.title}</h5>
+                  <p>{item.desc}</p>
+                </div>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </section>
 
       <section id="ordernowall" className="pt-0">
         <Container >
@@ -296,40 +329,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-      <section>
-        <Container>
-          <Row>
-            <Col lg="12" className="text-center">
-              <h5 className="feature__subtitle mb-4">What we serve</h5>
-              <h2 className="feature__title">Please be relaxed</h2>
-              <h2 className="feature__title">
-                we <span>work for you </span>
-              </h2>
-              <p className="mb-1 mt-4 feature__text">
-              Perfect Quality & Accurate Quantity 
-              </p>
-              {/* <p className="feature__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aperiam, eius.
-              </p> */}
-            </Col>
-
-            {featureData.map((item, index) => (
-              <Col lg="4" md="6" sm="6" key={index} className="mt-5">
-                <div className="feature__item text-center px-5 py-3">
-                  <img
-                    src={item.imgUrl}
-                    alt="feature-img"
-                    className="w-25 mb-3"
-                  />
-                  <h5 className=" fw-bold mb-3">{item.title}</h5>
-                  <p>{item.desc}</p>
-                </div>
-              </Col>
-            ))}
-          </Row>
-        </Container>
-      </section>
+      
       <section className="why__choose-us">
         <Container>
           <Row>
