@@ -78,8 +78,9 @@ const Header = () => {
   }, []);
 
   return (
+    <Container fluid>
     <header className="header " ref={headerRef}>
-      <Container>
+     
         <div className="nav__wrapper d-flex align-items-center ">
           <div className="logo  ">
             <img src={logo} alt="logo"   />
@@ -114,12 +115,18 @@ const Header = () => {
                 {totalQuantity}
                 </span>
             </span>
-
+            
+            <span className="user">
+              <Link to="/">
+              <i class="ri-heart-2-line"></i>
+              </Link>
+            </span>
             <span className="user">
               <Link to="/login">
                 <i class="ri-user-line"></i>
               </Link>
             </span>
+
 
             <span className="mobile__menu" onClick={toggleMenu}>
               <i class="ri-menu-line"></i>
@@ -127,8 +134,9 @@ const Header = () => {
          
           </div>
         </div>
-      </Container>
+     
     </header>
+    </Container>
   );
 };
 
