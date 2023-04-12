@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 
-import { Container } from "reactstrap";
+import { Container,Row,Col } from "reactstrap";
 // import logo from "../../assets/images/res-logo.png";
 import logo from "../../assets/images/magizhchi_logo.png";
 import { NavLink, Link } from "react-router-dom";
@@ -79,16 +79,17 @@ const Header = () => {
 
   return (
     <Container fluid>
-    <header className="header " ref={headerRef}>
+    <header className="header" ref={headerRef}>
      
         <div className="nav__wrapper d-flex align-items-center ">
-          <div className="logo  ">
+        <div className="logo  ">
             <img src={logo} alt="logo"   />
            
           </div>  
-
-          {/* ======= menu ======= */}
-          <div className="navigation" ref={menuRef} onClick={toggleMenu}>
+          <Row>
+     <Col>
+       {/* ======= menu ======= */}
+       <div className="navigation" ref={menuRef} onClick={toggleMenu}>
             <div className="menu d-flex align-items-center gap-5">
             <span className="mobile__menu" onClick={toggleMenuclose}>
             <i class="ri-close-fill end=0"></i>
@@ -106,6 +107,10 @@ const Header = () => {
               ))}
             </div>
           </div>
+      </Col>
+      <Col></Col>
+     </Row> 
+         
 
           {/* ======== nav right icons ========= */}
           <div className="nav__right d-flex align-items-center gap-4">
