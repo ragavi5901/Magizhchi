@@ -31,9 +31,4 @@
   }
   
 }
-@media only screen and (max-width: 768px) {
-  .category__item {
-   background-color: aqua;
-    
-  }
-}
+
