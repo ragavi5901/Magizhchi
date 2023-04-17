@@ -1,27 +1,24 @@
 .header {
   width: 100%;
-  height: 110px;
+  height: 100px;
   line-height: 100px;
-  
 }
 
 .logo {
-  /* text-align: left; */
-  width: 200px;
- 
+  /* text-align: center; */
 }
 .logo img {
-  width: calc(100% - 20%);
-
+  width: calc(100% - 60%);
   object-fit: contain;
-  
-
+  /* margin-top: -40px; */
 }
 
-.menu{
-  width: 100%;
-  padding-left: 100px;
- 
+.logo h5 {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #212245;
+  /* margin-top: -40px; */
+  margin-bottom: 0;
 }
 
 .menu a {
@@ -29,7 +26,6 @@
   font-size: 1.4rem;
   color: #212245;
   transition: 0.3s;
-  text-align: right;
 }
 
 .menu a:hover {
@@ -46,8 +42,6 @@
   font-size: 1.3rem;
   color: #212245;
   cursor: pointer;
-  padding-left: 20px;
-  
 }
 
 .cart__icon {
@@ -85,16 +79,12 @@
 }
 
 @media only screen and (max-width: 992px) {
-  .logo{
-    
-  }
   .logo img {
-    width: calc(100% - 20%);
-    object-fit: contain;
+    width: calc(100% - 70%);
   }
   .logo h5 {
     font-size: 0.8rem;
-    
+    margin-top: -15px;
   }
 
   .navigation {
@@ -111,12 +101,13 @@
   .menu {
     position: absolute;
     top: 0;
+    padding-top: 10px;
     right: 0;
     width: 250px;
     height: 100%;
     background: #fff;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     z-index: 100;
     line-height: 20px;
