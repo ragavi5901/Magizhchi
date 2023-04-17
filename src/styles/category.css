@@ -5,6 +5,8 @@
   border: 2px solid orangered;
   cursor: pointer;
   transition: 0.4s;
+  width: 110%;
+  
 }
 
 .category__item:hover {
@@ -17,6 +19,7 @@
 @media only screen and (max-width: 768px) {
   .category__item {
     padding: 20px 15px;
+    
   }
   .category__img img {
     width: 40px;
@@ -27,4 +30,10 @@
     font-size: 0.8rem;
   }
   
+}
+@media only screen and (max-width: 768px) {
+  .category__item {
+   background-color: aqua;
+    
+  }
 }

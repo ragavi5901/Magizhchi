@@ -339,7 +339,7 @@ const Home = () => {
 
             <Col lg="6" md="6">
               <div className="why__tasty-treat">
-                <h2 className="tasty__treat-title mb-4">
+                <h2 className="tasty__treat-title mb-4 pt-3">
                   Why <span>Tasty Treat?</span>
                 </h2>
                 <p className="tasty__treat-desc">
@@ -410,7 +410,7 @@ const Home = () => {
             <Col lg="6" md="6">
               <div className="testimonial ">
                 <h5 className="testimonial__subtitle mb-4">Testimonial</h5>
-                <h2 className="testimonial__title mb-4">
+                <h2 className="testimonial__title mb-4 pt-5">
                   What our <span>customers</span> are saying
                 </h2>
                 <p className="testimonial__desc">

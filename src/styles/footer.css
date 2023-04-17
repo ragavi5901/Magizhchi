@@ -1,11 +1,11 @@
 .footer {
   padding-top: 50px;
   padding-bottom: 30px;
-  background: #9e9b9b;
+  background: #ffffff;
 }
 
 .footer__logo img {
-  width: calc(100% - 80%);
+  width: calc(100% - 40%);
   margin-bottom: 5px;
 }
 
@@ -75,7 +75,7 @@
 
 .social__links span i {
   padding: 5px;
-  background: #df2020;
+  background: #fc7801;
   color: #fff;
   border-radius: 50%;
 }

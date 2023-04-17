@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
-import logo from "../../assets/images/res-logo.png";
+import logo from "../../assets/images/magizhchi_logo.png";
 
 import "../../styles/footer.css";
 
@@ -11,19 +11,13 @@ const Footer = () => {
     <footer className="footer">
       <Container>
         <Row>
-          <Col lg="3" md="4" sm="6">
+          <Col lg="4" md="4" sm="6">
             <div className=" footer__logo text-start">
               <img src={logo} alt="logo" />
-              
-              <h5>Fresh Fish</h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nesciunt pariatur accusamus
-              </p>
             </div>
           </Col>
 
-          <Col lg="3" md="4" sm="6">
+          <Col lg="4" md="4" sm="6">
             <h5 className="footer__title">Delivery Time</h5>
             <ListGroup className="deliver__time-list">
               <ListGroupItem className=" delivery__time-item border-0 ps-0">
@@ -38,7 +32,7 @@ const Footer = () => {
             </ListGroup>
           </Col>
 
-          <Col lg="3" md="4" sm="6">
+          <Col lg="4" md="4" sm="6">
             <h5 className="footer__title">Contact</h5>
             <ListGroup className="deliver__time-list">
               <ListGroupItem className=" delivery__time-item border-0 ps-0">
@@ -55,22 +49,12 @@ const Footer = () => {
             </ListGroup>
           </Col>
 
-          <Col lg="3" md="4" sm="6">
-            <h5 className="footer__title">Newsletter</h5>
-            <p>Subscribe our newsletter</p>
-            <div className="newsletter">
-              <input type="email" placeholder="Enter your email" />
-              <span>
-                <i class="ri-send-plane-line"></i>
-              </span>
-            </div>
-          </Col>
         </Row>
 
         <Row className="mt-5">
           <Col lg="6" md="6">
             <p className="copyright__text">
-              Copyright - 2022, website made by NextGendi. All Rights
+              Copyright - 2023, website made by Magizhchi Foods LLC. All Rights
               Reserved.
             </p>
           </Col>
