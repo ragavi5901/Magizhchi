@@ -23,9 +23,10 @@
 
 .menu a {
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #212245;
   transition: 0.3s;
+  padding-right: 10px;
 }
 
 .menu a:hover {
