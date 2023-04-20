@@ -14,8 +14,11 @@ import Cart from "../pages/Cart";
 import Checkout from "../pages/Checkout";
 import Contact from "../pages/Contact";
 import Login from "../pages/Login";
-import LoginForm from "../pages/LoginForm";
-import Register from "../pages/Register";
+import Forgotpassword from "../pages/Forgotpassword";
+import Resetpassword from "../pages/Resetpassword";
+// import LoginForm from "../pages/LoginForm";
+// import Register from "../pages/Register";
+import Signup from "../pages/Signup";
 import Details from "../pages/Details";
 
 const Routers = () => {
@@ -34,8 +37,11 @@ const Routers = () => {
       <Route path="/cart" element={<Cart />} />
       <Route path="/checkout" element={<Checkout />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/loginform" element={<LoginForm />} />
-      <Route path="/register" element={<Register />} />
+      <Route path="/Signup" element={<Signup />} />
+      <Route path="forgot-password" element={<Forgotpassword />} />
+      <Route path="reset-password" element={<Resetpassword />} />
+      {/* <Route path="/loginform" element={<LoginForm />} /> */}
+      {/* <Route path="/register" element={<Register />} /> */}
       <Route path="/details" element={<Details />} />
       <Route path="/contact" element={<Contact />} />
       

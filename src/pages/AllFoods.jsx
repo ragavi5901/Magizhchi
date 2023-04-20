@@ -11,7 +11,23 @@ import ReactPaginate from "react-paginate";
 import "../styles/all-foods.css";
 import "../styles/pagination.css";
 
+
+// import {useDispatch,useSelector} from "react-redux";
+// import { getAllProducts } from "../features/products/productSlice";
+// import { useEffect } from "react";
+
 const AllFoods = () => {
+  //product
+//   const productState=useSelector(state=>state)
+//   console.log(productState);
+//   const dispatch= useDispatch()
+//   useEffect(()=>{
+//     getProducts();
+//   }, []);
+//   const getProducts = ()=>{
+// dispatch(getAllProducts());
+//   }
+
   const [searchTerm, setSearchTerm] = useState("");
 
   const [pageNumber, setPageNumber] = useState(0);
